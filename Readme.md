@@ -36,3 +36,10 @@ docker build -t template-fotograpghy-apache . ==> construir imagen dentro de la 
 docker run -p 5000:80 --name photoContainer -d template-fotograpghy-apache
 // o de esta forma
 docker run -dit --name photoContainer -p 9000:80 template-fotograpghy-apache
+
+/_
+docker exec -it [imagen] bash
+ctrl + D --> exit --> para salir de laterminal de Bash
+httpd -v --> ver version de apache
+httpd -k start
+_/
